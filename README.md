@@ -14,6 +14,7 @@
 - Todo 리스트 페이지
 - 화상/영상 스트리밍 페이지
 - 로그인 JWT/소셜
+- 구글 Ads 광고
 
 ## as-is Tech Stack
 
