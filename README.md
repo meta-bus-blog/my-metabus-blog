@@ -15,8 +15,8 @@
 (when I apply one of these stacks, I will move it up on 'as-is Tech Stack')
 
 - react-query
-- storybook
-- jest for TDD (unit test)
+- storybook for CDD (Component Driven Development)
+- jest for TDD (Test Driven Development)
 - Three.js
 - canvas
 - websocket/socket.io
