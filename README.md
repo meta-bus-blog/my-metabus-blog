@@ -5,7 +5,7 @@
 - 나만의 메타버스 공간을 활용하는 블로그로 개인게시물, 미니게임, 채팅 등 다양한 컨텐츠 도입 및 개인 운영 서비스
 - 홀로 운영하며 자유롭게 여러 Tech stack을 적용해보자는 취지와 나만의 게임 제작 및 1인개발 목표
 
-## 컨텐츠/기능
+## Contents/Function
 
 - 블로그 게시물 페이지
 - 채팅 페이지
@@ -20,6 +20,8 @@
 
 - next.js
 - typescript
+- css-module
+- scss
 
 ## to-be Tech Stack
 
