@@ -15,7 +15,7 @@
 
 ## Contents/Function
 
-- 블로그 게시물 페이지
+- 블로그 게시물 페이지 (기존 tistory 글 이관)
 - 채팅 페이지
 - 미니게임 페이지
 - 테스트 토스페이먼츠 결제 기능
@@ -24,6 +24,7 @@
 - 로그인 JWT/소셜
 - 구글 Ads 광고
 - 자신의 캐릭터 / 랜덤 뽑기 아이템 장착
+- 무한스크롤
 
 ## as-is Tech Stack
 
@@ -36,8 +37,8 @@
 
 (when I apply one of these stacks, I will move it up on 'as-is Tech Stack')
 
-- react-query
-- storybook for CDD (Component Driven Development)
+- react-query *MUST
+- storybook for CDD (Component Driven Development) *MUST
 - jest for TDD (Test Driven Development)
 - Three.js
 - canvas
@@ -48,4 +49,5 @@
 
 ## Optimization
 - 업데이트 예정
+- 사용자경험 개선 List : Intersection Observer를 사용 전 후 
 
