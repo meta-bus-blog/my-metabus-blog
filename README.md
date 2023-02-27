@@ -15,6 +15,7 @@
 
 ## Contents/Function
 
+- 나의 경력 history 온보딩 페이지
 - 블로그 게시물 페이지 (기존 tistory 글 이관)
 - 채팅 페이지
 - 미니게임 페이지
