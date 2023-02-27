@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
+// import { Inter } from '@next/font/google';
 import styles1 from '../styles/home.module.scss';
 
-const inter = Inter({ subsets: ['latin'] });
+
+
+// const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       </Head>
       <main className={styles1.main}>
         <h1>test</h1>
+ 
+
       </main>
     </>
   );
