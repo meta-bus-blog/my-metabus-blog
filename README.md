@@ -51,6 +51,6 @@
 - recoil / context API
 
 ## Optimization
-- 업데이트 예정
+- 컴포넌트 재사용
 - 사용자경험 개선 List : Intersection Observer를 사용 전 후 
 

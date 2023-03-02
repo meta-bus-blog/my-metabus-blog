@@ -2,12 +2,20 @@ import Head from 'next/head';
 import Image from 'next/image';
 // import { Inter } from '@next/font/google';
 import styles1 from '../styles/home.module.scss';
-
-
+import TestHTML from '@components/\bTestHTML';
 
 // const inter = Inter({ subsets: ['latin'] });
+export async function getServerSideProps(context: any) {
+  // const id = context.params.id;
+  // console.log(context)
+  // const response = await axios.get(`${getBaseurl}/api/board/0/${id}`);
+  console.log('index');
+  return {
+    props: {},
+  };
+}
 
-export default function Home() {
+export default function Home(props: any) {
   return (
     <>
       <Head>
@@ -18,8 +26,7 @@ export default function Home() {
       </Head>
       <main className={styles1.main}>
         <h1>test</h1>
- 
-
+        <TestHTML />
       </main>
     </>
   );
