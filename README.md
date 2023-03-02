@@ -4,6 +4,7 @@
 
 - 나만의 메타버스 공간을 활용하는 블로그로 개인게시물, 미니게임, 채팅 등 다양한 컨텐츠 도입 및 개인 운영 서비스
 - 홀로 운영하며 자유롭게 여러 Tech stack을 적용해보자는 취지와 나만의 게임 제작 및 1인개발 목표
+- 성능최적화를 위한 여러가지 테스트
 
 ## architectures
 정의: 폴더의 구조, 컴포넌트 구조를 비즈니스 로직과 단순 컴포넌트를 어떤 패턴을 사용할지 정의.
@@ -14,14 +15,19 @@
 
 ## Contents/Function
 
-- 블로그 게시물 페이지
+- 나의 경력 history 온보딩 페이지
+- 블로그 게시물 페이지 (기존 tistory 글 이관) : 페이지네이션
+- 프로젝트 구현/성과 기록 포스트잇 : 무한스크롤
 - 채팅 페이지
 - 미니게임 페이지
 - 테스트 토스페이먼츠 결제 기능
-- Todo 리스트 페이지
+- Todo 리스트 페이지 
 - 화상/영상 스트리밍 페이지
 - 로그인 JWT/소셜
 - 구글 Ads 광고
+- 자신의 캐릭터 : 360회전, 숨쉬기애니메이션 / 랜덤 뽑기 아이템 장착 
+
+
 
 ## as-is Tech Stack
 
@@ -34,12 +40,17 @@
 
 (when I apply one of these stacks, I will move it up on 'as-is Tech Stack')
 
-- react-query
-- storybook for CDD (Component Driven Development)
+- react-query *MUST
+- storybook for CDD (Component Driven Development) *MUST
 - jest for TDD (Test Driven Development)
 - Three.js
 - canvas
 - websocket/socket.io
 - webrtc
 - graphQL
+- recoil / context API
+
+## Optimization
+- 컴포넌트 재사용
+- 사용자경험 개선 List : Intersection Observer를 사용 전 후 
 
