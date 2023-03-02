@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 // import { Inter } from '@next/font/google';
-import styles1 from '../styles/home.module.scss';
-import TestHTML from '@components/\bTestHTML';
+// import styles1 from '../styles/home.module.scss';
+import TestHTML from '@components/TestHTML';
 
 // const inter = Inter({ subsets: ['latin'] });
 export async function getServerSideProps(context: any) {
@@ -24,9 +24,8 @@ export default function Home(props: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles1.main}>
-        <h1>test</h1>
-        <TestHTML />
+      <main>
+        {/* <TestHTML /> */}
       </main>
     </>
   );
