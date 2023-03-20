@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import classes from './test.module.scss';
+import classes from './overwatch.module.scss';
 import Image from 'next/image';
 export async function getStaticProps(context: any) {
   // const id = context.params.id;
@@ -19,7 +19,7 @@ export default function TestHTML(props: any) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>OverWatch</title>
         <meta name="description" content="Overwatch Characters" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

@@ -1,0 +1,197 @@
+.body {
+  height: 3000px;
+}
+.header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  // display: none;
+}
+
+.header .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  ul.menu {
+    font-family: Arial, sans-serif;
+    display: flex;
+    li {
+      position: relative;
+      &::before {
+        width: 1px;
+        height: 12px;
+        content: '';
+        background-color: #e5e5e5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &:first-child::before {
+        display: none;
+      }
+      a {
+        font-size: 13px;
+        padding: 11px 16px;
+        display: block;
+        color: #656565;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  & .search {
+    // background-color: red;
+    height: 34px;
+    position: relative;
+    & input {
+      width: 36px;
+      height: 34px;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      background-color: #fff;
+      color: #777;
+      transition: width 0.4s;
+      font-size: 12px;
+      &:focus {
+        width: 190px;
+        border-color: #669900;
+        & + #material-icons {
+          opacity: 0;
+        }
+      }
+    }
+    & #material-icons {
+      height: 24px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 5px;
+      margin: auto;
+      transition: 0.4s;
+    }
+  }
+}
+
+.header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+  & .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+// visual
+.visual {
+  margin-top: 120px;
+  & .inner {
+  }
+  & .title {
+    & .btn {
+    }
+  }
+  & .cup1 {
+    &.image {
+    }
+    &.text {
+    }
+  }
+  & .cup2 {
+    &.image {
+    }
+    &.text {
+    }
+  }
+  & .spoon {
+  }
+}
+
+// YOUTUBE VIDEO
+
+.youtube {
+  position: relative;
+  height: 400px;
+  background-color: #333;
+  overflow: hidden;
+  & .youtube__area {
+    width: 1040px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(1040px / -2);
+    margin-top: calc(1040 * 9 / 16 / -2);
+  }
+  & .youtube__area::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+  }
+
+  & .youtube__cover {
+    background-image: url('../../public/images/video_cover_pattern.png');
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#player{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.youtube .inner{
+  height: 700px;
+  // background-color: royalblue;
+}
+
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150;
+}
+.youtube .floating3 {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
