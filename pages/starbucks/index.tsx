@@ -168,14 +168,17 @@ const Starbucks = (props: any) => {
           <Image
             src={floating1}
             className={`${classes.floating} ${classes.floating1}`}
+            alt=''
           />
           <Image
             src={floating2}
             className={`${classes.floating} ${classes.floating2}`}
+            alt=''
           />
           <Image
             src={floating3}
             className={`${classes.floating} ${classes.floating3}`}
+            alt=''
           />
         </div>
       </section>

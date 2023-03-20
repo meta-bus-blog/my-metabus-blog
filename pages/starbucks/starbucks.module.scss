@@ -1,9 +1,12 @@
 .body {
-  height: 100vh;
+  height: 3000px;
 }
 .header {
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header .inner {
@@ -91,10 +94,104 @@
   }
 }
 
-// .header .sub-menu ul.menu {
-// }
+.header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+  & .badge {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
 
-// .header .sub-menu ul.menu li {
-// }
-// .header .sub-menu ul.menu li a {
-// }
+// visual
+.visual {
+  margin-top: 120px;
+  & .inner {
+  }
+  & .title {
+    & .btn {
+    }
+  }
+  & .cup1 {
+    &.image {
+    }
+    &.text {
+    }
+  }
+  & .cup2 {
+    &.image {
+    }
+    &.text {
+    }
+  }
+  & .spoon {
+  }
+}
+
+// YOUTUBE VIDEO
+
+.youtube {
+  position: relative;
+  height: 400px;
+  background-color: #333;
+  overflow: hidden;
+  & .youtube__area {
+    width: 1040px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(1040px / -2);
+    margin-top: calc(1040 * 9 / 16 / -2);
+  }
+  & .youtube__area::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+  }
+
+  & .youtube__cover {
+    background-image: url('../../public/images/video_cover_pattern.png');
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#player{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.youtube .inner{
+  height: 700px;
+  // background-color: royalblue;
+}
+
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150;
+}
+.youtube .floating3 {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
