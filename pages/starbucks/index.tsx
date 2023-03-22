@@ -36,38 +36,38 @@ const Starbucks = (props: any) => {
     });
   }, []);
 
-  useEffect(() => {
-    // 2. This code loads the IFrame Player API code asynchronously.
-    let tag = document.createElement('script');
+  // useEffect(() => {
+  //   // 2. This code loads the IFrame Player API code asynchronously.
+  //   let tag = document.createElement('script');
 
-    tag.src = 'https://www.youtube.com/iframe_api';
-    let firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  //   tag.src = 'https://www.youtube.com/iframe_api';
+  //   let firstScriptTag = document.getElementsByTagName('script')[0];
+  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
+  //   // 3. This function creates an <iframe> (and YouTube player)
+  //   //    after the API code downloads.
 
-    function onYouTubeIframeAPIReady() {
-      new YT.Player('player', {
-        videoId: 'O7Yw6wdHTlY',
-        playerVars: {
-          autoplay: true,
-          loop: true,
-          playlist: 'O7Yw6wdHTlY',
-        },
-        events: {
-          onReady: function (event: any) {
-            event.target.mute();
-          },
-        },
-      });
-    }
+  //   function onYouTubeIframeAPIReady() {
+  //     new YT.Player('player', {
+  //       videoId: 'O7Yw6wdHTlY',
+  //       playerVars: {
+  //         autoplay: true,
+  //         loop: true,
+  //         playlist: 'O7Yw6wdHTlY',
+  //       },
+  //       events: {
+  //         onReady: function (event: any) {
+  //           event.target.mute();
+  //         },
+  //       },
+  //     });
+  //   }
 
-    function floatingObject(selector:any){
+  //   function floatingObject(selector:any){
         
-    }
+  //   }
 
-  }, []);
+  // }, []);
   // const searchInput = searchEl!.querySelector('input');
   return (
     <div className={classes.body}>

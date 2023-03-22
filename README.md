@@ -49,7 +49,7 @@
 - webrtc
 - graphQL
 - recoil / context API
-
+- view transitions API (페이지 이동간 에니메이션)
 ## Optimization
 - 컴포넌트 재사용
 - 사용자경험 개선 List : Intersection Observer를 사용 전 후 
