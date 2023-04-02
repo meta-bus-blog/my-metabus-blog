@@ -3,6 +3,7 @@ import Image from 'next/image';
 // import { Inter } from '@next/font/google';
 // import styles1 from '../styles/home.module.scss';
 import TestHTML from '@components/TestHTML';
+import { Button } from '@youngble/componentlibrary';
 
 // const inter = Inter({ subsets: ['latin'] });
 export async function getServerSideProps(context: any) {
@@ -26,6 +27,9 @@ export default function Home(props: any) {
       </Head>
       <main>
         {/* <TestHTML /> */}
+        <Button>
+          <span>버튼 테스트</span>
+        </Button>
       </main>
     </>
   );
