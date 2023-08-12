@@ -36,6 +36,7 @@ const Starbucks = (props: any) => {
     });
   }, []);
 
+  
   // useEffect(() => {
   //   // 2. This code loads the IFrame Player API code asynchronously.
   //   let tag = document.createElement('script');
