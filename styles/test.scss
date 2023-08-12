@@ -1,0 +1,19 @@
+.parent {
+  container-type: inline-size;
+  container-name: parent;
+  border: 3px solid gray;
+  width: 200px;
+  height: 200px;
+  display: grid;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+@container parent (max-width:300px) {
+  .child {
+    background: red;
+  }
+}
