@@ -12,6 +12,7 @@ export async function getStaticProps(context: any) {
   };
 }
 
+
 export default function TestHTML(props: any) {
   // console.log(props);
   const heroList = Array(32).fill(undefined);
