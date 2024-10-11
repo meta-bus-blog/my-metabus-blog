@@ -7,11 +7,26 @@
 - 성능최적화를 위한 여러가지 테스트
 
 ## architectures
+
+웹
 정의: 폴더의 구조, 컴포넌트 구조를 비즈니스 로직과 단순 컴포넌트를 어떤 패턴을 사용할지 정의.
 해당 프로젝트의 특성상(여러가지 시도하려는 목적) 여러가지 패턴을 써볼려고함.
-- Custom Hook Pattern 
+
+- Custom Hook Pattern
 - Presentation / Container Component Pattern
+- SOLID 원칙 적용 및 함수형 프로그래밍 원칙 적용
+- HOC 컴포넌트 적용
 - 다른 패턴 이해후 추후 추가(State Reducer Pattern, Props Getters Pattern 등)
+- Apollo, axios 통신
+- TDD 진행: scope는 unit Test & UI Component Test MVP로 진행 추후 통합/E2E 여부결정
+
+---
+
+앱
+
+- Webview 사용 Android/Ios 앱 배포 / 브릿지 사용 웹앱 통신
+
+---
 
 ## Contents/Function
 
@@ -21,13 +36,12 @@
 - 채팅 페이지
 - 미니게임 페이지
 - 테스트 토스페이먼츠 결제 기능
-- Todo 리스트 페이지 
+- Todo 리스트 페이지
 - 화상/영상 스트리밍 페이지
 - 로그인 JWT/소셜
 - 구글 Ads 광고
-- 자신의 캐릭터 : 360회전, 숨쉬기애니메이션 / 랜덤 뽑기 아이템 장착 
-
-
+- 자신의 캐릭터 : 360회전, 숨쉬기애니메이션 / 랜덤 뽑기 아이템 장착
+- 이미지/영상 upload & fetch display media
 
 ## as-is Tech Stack
 
@@ -40,8 +54,8 @@
 
 (when I apply one of these stacks, I will move it up on 'as-is Tech Stack')
 
-- react-query *MUST
-- storybook for CDD (Component Driven Development) *MUST
+- react-query \*MUST
+- storybook for CDD (Component Driven Development) \*MUST
 - jest for TDD (Test Driven Development)
 - Three.js
 - canvas
@@ -50,7 +64,8 @@
 - graphQL
 - recoil / context API
 - view transitions API (페이지 이동간 에니메이션)
-## Optimization
-- 컴포넌트 재사용
-- 사용자경험 개선 List : Intersection Observer를 사용 전 후 
 
+## Optimization
+
+- 컴포넌트 재사용
+- 사용자경험 개선 List : Intersection Observer를 사용 전 후
